@@ -27,4 +27,4 @@ def plot(losses, accuracies):
     ax2.tick_params(axis='y', labelcolor=color)
 
     plt.title("Loss and Accuracy Progress")
-    plt.show()
+    plt.savefig('Training_Progress.png')

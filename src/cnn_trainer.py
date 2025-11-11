@@ -1,5 +1,8 @@
+import matplotlib.pyplot as plt
+
 from Data import import_data
 from prediction_logic import *
+
 x_train, y_train, x_dev, y_dev = import_data()
 
 #reshape data
@@ -8,7 +11,7 @@ x_dev = x_dev.T.reshape(-1, 28, 28 )
 
 print(x_train.shape, x_dev.shape)
 
-#Initialisation des Listes
+#Lists to store loss and accuracy values
 losses = []
 accuracies = []
 
@@ -24,4 +27,4 @@ kernel, w_fc, b_fc, losses = grad_descent(x_train, y_train, iterations,
 save_model(kernel, w_fc, b_fc, filename="cnn_model.pkl")
 
 plt.ioff()  # Turn off interactive mode after training
-plt.show()  # Show final plot
+plt.savefig("cnn_trainer.png")  # Show final plot

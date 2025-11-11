@@ -2,7 +2,6 @@ import pickle
 import cv2
 from CNN import *
 import numpy as np
-from src.CNN import convolution, max_pooling
 import os
 
 def save_model(kernel, w_fc, b_fc, filename):
