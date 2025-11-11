@@ -33,7 +33,3 @@ To run please do the following two commands in your terminal:
 python cnn_trainer.py
 python predictions.py
 ```
-
-## Sources
-
-This poject is inspired mainly on the work "*Deep Learning*" by Ian Goodfellow, Yoshua Bengio and Aaron Courville.
